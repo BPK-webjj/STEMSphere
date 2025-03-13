@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The STEMSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+          The STEMSphere
+        </div>
+        <ul class="nav-items">
+          <li class="active"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+          <li><a href="comunity.html"><i class="fa-solid fa-comments"></i>Community</a></li>
+          <li><a href="aboutus.html"><i class="fa-solid fa-info-circle"></i>About Us</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-hands-helping"></i>Support Us</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="banner">
+        <h1>Welcome to EduHub</h1>
+        <p>Your journey to knowledge starts here.</p>
+        <button class="explore-btn">Explore Courses <i class="fas fa-arrow-right"></i></button>
+    </section>
+
+
+
+
+    <div class="function-container">
+        <h1>Our Functions</h1>
+        <div class="grid-container">
+          <div class="card">
+            <div class="check-icon">1</div>
+            <h2>STEM Classess & Workshops</h2>
+            <button
+              class="btn"
+              onclick="showDetails('STEM classes & workshops', ['Hands-on STEM activities', 'Experienced Instructors', 'Online and offline options'])"
+            >
+              Learn more
+            </button>
+          </div>
+          <div class="card">
+            <div class="check-icon">2</div>
+            <h2>STEM Competitions</h2>
+            <button
+              class="btn"
+              onclick="showDetails('STEM Competitions', ['Annual science fair', 'Math and coding competitions', 'Scholarship opportunities'])"
+            >
+              Learn more
+            </button>
+          </div>
+          <div class="card">
+            <div class="check-icon">3</div>
+            <h2>STEM Materials Donations</h2>
+            <button
+              class="btn"
+              onclick="showDetails('STEM Materials Donations', ['Access to lab kits', 'Resource sharing platform', 'Community contributions'])"
+            >
+              Learn more
+            </button>
+          </div>
+          <div class="card">
+            <div class="check-icon">4</div>
+            <h2>STEM Counselling & Mentorship Program</h2>
+            <button
+              class="btn"
+              onclick="showDetails('STEM Counselling & Mentorship Program', ['One-on-one mentorship', 'Career guidance sessions', 'Experienced professionals'])"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal for displaying details -->
+      <div id="detailsModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeDetails()">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <ul id="modalDetailsList"></ul>
+        </div>
+      </div>
+
+
+
+    <div class="container">
+
+        <h2>Our Vision</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-lightbulb icon"></i>
+                <h3>Inspiring Passion for STEM</h3>
+                <p>We create an inclusive platform that ignites a lifelong passion for STEM subjects among learners of all ages.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-users icon"></i>
+                <h3>Leading Online Education</h3>
+                <p>Our goal is to cultivate a global community that fosters collaboration and engagement in STEM.</p>
+                <a href="#" class="button">Join Us</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-globe icon"></i>
+                <h3>Sustainability and Responsibility</h3>
+                <p>We envision a future where accessible STEM education helps address real-world challenges.</p>
+                <a href="#" class="button">Get Involved</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-rocket icon"></i>
+                <h3>Shaping Education's Future</h3>
+                <p>We are dedicated to inspiring the next generation of innovators and leaders.</p>
+                <a href="#" class="button">Discover More</a>
+            </div>
+        </div>
+    
+        <h2>Our Mission</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-book icon"></i>
+                <h3>Engaging Learning</h3>
+                <p>We provide an engaging platform that caters to diverse learning styles.</p>
+                <a href="#" class="button">Explore Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-graduate icon"></i>
+                <h3>Personalized Experiences</h3>
+                <p>Creating personalized learning experiences at students' own pace.</p>
+                <a href="#" class="button">Find Out More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-comments icon"></i>
+                <h3>Supportive Community</h3>
+                <p>Building a vibrant community of learners and mentors.</p>
+                <a href="#" class="button">Join the Community</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-sync-alt icon"></i>
+                <h3>Continuous Improvement</h3>
+                <p>Committed to continuous innovation and improvement in education.</p>
+                <a href="#" class="button">Learn How</a>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <a href="https://www.facebook.com/profile.php?id=61563422857073&mibextid=ZbWKwL" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://t.me" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/stem-sphere/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="http://www.youtube.com/channel" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://x.com" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <a>&copy; 2024 The STEMSphere. All rights reserved.</a>
+        </div>
+        <button class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3a925ef8d0.js" crossorigin="anonymous"></script>
+</body>
+</html>
